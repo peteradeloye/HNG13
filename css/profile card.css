@@ -37,3 +37,12 @@ li {
     list-style-type: none;
 }
 
+@media screen and (min-width:700){
+    .box {
+        display: flex;
+    }
+    
+    .test-profile-card {
+        width: max-content;
+    }
+}
