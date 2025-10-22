@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/profile-card.css">
+</head>
+<body>
+    <main class="contact">
+        <h2>Contact Page</h2>
+        <p>Welcome to my contact page. Reach out to me for your service</p>
+        <div>
+            <!-- Contact form: collects name, email, subject and message -->
+    <form id="contactForm" novalidate>
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+        <small class="error" data-for="name"></small>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <small class="error" data-for="email"></small>
+      </div>
+
+      <div class="field">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        <small class="error" data-for="subject"></small>
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message here" required></textarea>
+        <small class="error" data-for="message"></small>
+      </div>
+
+      <button type="submit" id="submitBtn">Send Message</button>
+
+      <!-- Feedback area for success / general errors -->
+      <div id="formFeedback" role="status" aria-live="polite"></div>
+    </form>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
