@@ -5,6 +5,7 @@ body {
     height: 150vh;
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5rem;
 }
 
 .test-profile-card {
@@ -45,4 +46,89 @@ li {
     .test-profile-card {
         width: max-content;
     }
+}
+
+.about {
+    padding: 10px;
+}
+
+.about_div {
+    width: 1000px;
+    border: 1px solid gray;
+    padding: 5px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+header {
+    background-color: #222;
+    color: #eaeaea;
+    padding: 10px;
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: right;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    gap: 20px;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.test-about-bio {
+    p {
+        text-align:left;
+    }
+}
+
+
+.contact {
+    width: 40rem;
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+label {
+    display: block;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+input, textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+} 
+
+button {
+    background-color: blue;
+    padding: 12px;
+    border: none;
+    border-radius:7px;
+    color: #fff;
+    cursor: pointer;
 }
