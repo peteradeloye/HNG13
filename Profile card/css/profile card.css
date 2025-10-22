@@ -132,3 +132,24 @@ button {
     color: #fff;
     cursor: pointer;
 }
+
+.error {
+    color: red;
+}
+
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; background: #f7fafc; color: #111827; margin: 0; padding: 24px; }
+.container { max-width: 640px; margin: 24px auto; background: #fff; padding: 24px; border-radius: 8px; box-shadow: 0 6px 18px rgba(15,23,42,0.08); }
+h1 { margin-top: 0; }
+.field { margin-bottom: 16px; }
+label { display: block; margin-bottom: 6px; font-weight: 600; }
+input[type="text"], input[type="email"], textarea { width: 100%; padding: 10px 12px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; }
+input:focus, textarea:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,0.12); }
+button { background: #2563eb; color: white; border: none; padding: 10px 16px; font-size: 16px; border-radius: 6px; cursor: pointer; }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+.error { color: #b91c1c; display: block; margin-top: 6px; font-size: 13px; min-height: 18px; }
+#formFeedback { margin-top: 16px; font-weight: 600; }
+#formFeedback.success { color: #166534; }
+#formFeedback.error { color: #b91c1c; }
+.note { margin-top: 18px; color: #6b7280; font-size: 14px; }
+@media (max-width:480px) { .container{ padding:16px; } }

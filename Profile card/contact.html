@@ -11,37 +11,63 @@
         <h2>Contact Page</h2>
         <p>Welcome to my contact page. Reach out to me for your service</p>
         <div>
-            <form>
+            <!-- Contact form: collects name, email, subject and message -->
+    <form id="contactForm" novalidate>
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+        <small class="error" data-for="name"></small>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <small class="error" data-for="email"></small>
+      </div>
+
+      <div class="field">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        <small class="error" data-for="subject"></small>
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message here" required></textarea>
+        <small class="error" data-for="message"></small>
+      </div>
+
+      <button type="submit" id="submitBtn">Send Message</button>
+
+      <!-- Feedback area for success / general errors -->
+      <div id="formFeedback" role="status" aria-live="polite"></div>
+    </form>
+            <!-- <form id="contact-form">
                 <div class="test-contact-name">
                     <label for="name">Name</label>
-                    <input id="name" type="text" value="Peter Adeloye">
+                    <input id="name" type="text" placeholder="Your name">
+                    <p class="error" data-for="name"></p>
                 </div>
-                <div class="test-contact-email">
                     <label for="email">Email</label>
-                    <input id="email" type="email" value="adeloyepeter33@gmail.com">
+                    <input id="email" type="email" placeholder="your email">
+                    <p class="error" data-for="email"></p>
                 </div>
                 <div class="test-contact-subject">
                     <label for="subject">Subject</label>
                     <textarea id="subject"></textarea>
+                    <p class="error" data-for="subject"></p>
                 </div>
                 <div class="test-contact-message">
                     <label for="message">Message</label>
                     <textarea id="message"></textarea>
-                </div>
-                <div class="test-contact-error-mail">
-                    <label for="error">Error Message</label>
-                    <textarea id="error"></textarea>
-                </div>
-                <div class="test-contact-success">
-                    <label for="success"> Success Message</label>
-                    <textarea id="success"></textarea>
+                    <p class="error" data-for="message"></p>
                 </div>
                  <div class="test-contact-submit">
                     <button type="submit">Submit</button>
                 </div>
-            </form>
+            </form> -->
         </div>
     </main>
+    <script src="js/index.js"></script>
 </body>
 </html>
-<button>Submit</button>
